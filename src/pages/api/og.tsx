@@ -4,7 +4,7 @@ export const config = {
   runtime: "edge",
 };
 
-const font = fetch("/KosugiMaru.ttf").then((res) =>
+const font = fetch(new URL("../../assets/KosugiMaru.ttf", import.meta.url)).then((res) =>
   res.arrayBuffer(),
 );
 
