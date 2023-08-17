@@ -14,7 +14,7 @@ export default function handler() {
           alignItems: "center",
           width: "100%",
           height: "100%",
-          backgroundColor: "white",
+          backgroundColor: "black",
           fontSize: "128px",
         }}
       >
