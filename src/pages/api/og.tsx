@@ -55,7 +55,7 @@ export default async function handler(req: NextRequest) {
                             color: "white",
                             lineHeight: 1.3,
                             backgroundColor: '#FFA200',
-                            padding: '10px 20px',
+                            padding: '20px 40px',
                         }}
                     >
                         選手権
