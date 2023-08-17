@@ -7,6 +7,7 @@ export const config = {
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
     const title = req.query?.title || 'ぼくらの';
+    console.log(res)
 
     return new ImageResponse(
         (
