@@ -4,9 +4,9 @@ export const config = {
   runtime: "edge",
 };
 
-const font = fetch(new URL("https://contest-ogp.vercel.app/KosugiMaru.ttf", import.meta.url)).then((res) =>
-  res.arrayBuffer(),
-);
+const font = fetch(
+  new URL("https://contest-ogp.vercel.app/KosugiMaru.ttf", import.meta.url),
+).then((res) => res.arrayBuffer());
 
 export default async function handler(req: NextRequest) {
   try {
