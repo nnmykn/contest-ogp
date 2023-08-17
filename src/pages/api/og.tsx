@@ -17,11 +17,13 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
                     alignItems: "center",
                     width: "100%",
                     height: "100%",
-                    backgroundColor: "white",
+                    backgroundColor: "black",
                     fontSize: "128px",
+                    color: "white",
                 }}
             >
                 {title}
+                <div style={{backgroundColor: '#FFA200', padding: '10px'}}><p>選手権</p></div>
             </div>
         ),
     );
