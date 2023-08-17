@@ -5,7 +5,7 @@ export const config = {
 };
 
 const font = fetch(
-    new URL("../../assets/KosugiMaru.woff2", import.meta.url)
+    new URL("../../assets/KosugiMaru.ttf", import.meta.url)
 ).then((res) => res.arrayBuffer());
 
 export default async function handler(req: NextRequest) {
@@ -28,7 +28,7 @@ export default async function handler(req: NextRequest) {
                         width: "100%",
                         display: "flex",
                         textAlign: "center",
-                        alignItems: "flex-start",
+                        alignItems: "center",
                         justifyContent: "center",
                         flexDirection: "column",
                         flexWrap: "nowrap",
@@ -36,12 +36,10 @@ export default async function handler(req: NextRequest) {
                 >
                     <div
                         style={{
-                            width: "100%",
-                            fontSize: 60,
+                            fontSize: 90,
                             fontStyle: "normal",
                             fontWeight: "bold",
                             color: "white",
-                            padding: "0 120px",
                             lineHeight: 1.3,
                             marginBottom: "30px",
                             wordWrap: "break-word",
@@ -51,16 +49,16 @@ export default async function handler(req: NextRequest) {
                     </div>
                     <div
                         style={{
-                            width: "100%",
-                            fontSize: 40,
+                            fontSize: 90,
                             fontStyle: "normal",
                             fontWeight: "bold",
                             color: "white",
-                            padding: "0 120px",
                             lineHeight: 1.3,
+                            backgroundColor: '#FFA200',
+                            padding: '10px 20px',
                         }}
                     >
-                        ✏️ せんしゅけん
+                        選手権
                     </div>
                 </div>
             ),
